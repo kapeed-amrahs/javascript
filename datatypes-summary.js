@@ -118,3 +118,34 @@ lets talk about some Range of Primitive DataType:
         Represents large integers that cannot be represented by the Number type.
         The range is practically unlimited and depends on available memory.
         */
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                                   // stack and heap memory in javascript//
+
+    let a = 10; // primitive data type stored in stack memory
+    let b = { name: "John", age: 30 }; // non-primitive data type stored in heap memory
+    let c = [1, 2, 3, 4, 5]; // non-primitive data type stored in heap memory
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    /*
+    Summary:
+    In JavaScript, memory management is divided into two main areas: stack memory and heap memory.
+    Stack Memory:
+    1. Stack memory is used for storing primitive data types (e.g., numbers, strings, booleans) and function call information.
+    2. It operates in a Last In, First Out (LIFO)
+         manner, meaning the last item added to the stack is the first one to be removed.   
+    3. Stack memory is generally faster to access and manage because of its organized structure.
+    4. Variables declared with primitive data types are stored directly in stack
+    memory.
+    Heap Memory:    
+    1. Heap memory is used for storing non-primitive data types (e.g., objects, arrays, functions).
+    2. It allows for dynamic memory allocation, meaning memory can be allocated and deallocated as needed during runtime.
+    3. Heap memory is less organized than stack memory, which can lead to fragmentation and slower access times.
+    4. Variables that reference non-primitive data types store a reference (or pointer) to the location in heap memory where the actual data is stored.
+    Understanding the distinction between stack and heap memory is crucial for optimizing performance and managing memory effectively in JavaScript.
+    */  
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
